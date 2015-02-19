@@ -4897,14 +4897,14 @@ then
 
 	if test "" == ""
 	then
-		{ $as_echo "$as_me:${as_lineno-$LINENO}: checking if compiler flag -O3 works" >&5
-$as_echo_n "checking if compiler flag -O3 works... " >&6; }
+		{ $as_echo "$as_me:${as_lineno-$LINENO}: checking if compiler flag \"$optimize\" works" >&5
+$as_echo_n "checking if compiler flag \"$optimize\" works... " >&6; }
 	else
 		{ $as_echo "$as_me:${as_lineno-$LINENO}: checking " >&5
 $as_echo_n "checking ... " >&6; }
 	fi
 	save_CXXFLAGS="$CXXFLAGS"
-	CXXFLAGS="$CXXFLAGS -O3"
+	CXXFLAGS="$CXXFLAGS "$optimize""
 
 
 

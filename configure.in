@@ -242,7 +242,7 @@ AC_ARG_WITH(optimize,   [  --with-optimize=flags   compile with optimization fla
 
 if test "$optimize" != no
 then
-	TEST_AND_SET_CXXFLAG(-O3)
+	TEST_AND_SET_CXXFLAG("$optimize")
 	if test $ts_success == no
 	then
 		AC_MSG_WARN([I do not know how to switch on optimizing for this compiler])
